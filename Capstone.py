@@ -1,6 +1,5 @@
 # Anthony Survant
 # Capstone Spring 2013
-#
 
 import os
 import PIL
@@ -9,7 +8,7 @@ import math
 
 
 def v(fname):
-	# ffmpeg -i FILENAME -s qvga image%d.jpg
+#	ffmpeg -i FILENAME -s qvga image%d.jpg
 #	os.system("rm image*.jpg")
 #	os.system("ffmpeg -i "+fname+" image%d.jpg")
 
@@ -90,7 +89,7 @@ def correct():
 		for y in xrange(h):
 			image[x][y] = (int(f[x*h*3+y*3]),int(f[x*h*3+y*3+1]),int(f[x*h*3+y*3+2]))
 		
-	#print image[0:2]
+#	print image[0:2]
 	return image
 
 def change(image):
@@ -114,9 +113,9 @@ def change(image):
 			last = last * 2
 	
 
-#v("v1.avi")
+# v("v1.avi")
 change(correct())
 # r*256*256 + g*256 + b
 
-#Typecast as char
-#ffmpeg -i movie.mp4 -r 1 -s 240x100 image%d.jpg
+# Typecast as char
+# ffmpeg -i movie.mp4 -r 1 -s 240x100 image%d.jpg
