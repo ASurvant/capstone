@@ -119,4 +119,4 @@ change(correct())
 # r*256*256 + g*256 + b
 
 #Typecast as char
-#ffmpeg -i drive.mp4 -r 1 -s 240x100 image%d.jpg
+#ffmpeg -i movie.mp4 -r 1 -s 240x100 image%d.jpg
